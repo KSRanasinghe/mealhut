@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+@media screen and(min-width:992px) {
+    .navbar{
+        padding: 0;
+    }
+
+    .navbar .navbar-nav .g-underline .nav-link{
+        padding: 1em 0;
+    }
+    
+    .navbar .navbar-nav .nav-item .g-underline{
+        padding: 0 1em;
+    }
+}
+
+.navbar .navbar-nav .nav-item .g-underline{
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-item .g-underline::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    content: '';
+    background-color: rgb(25,135,84);
+    width: 0%;
+    height: 2px;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    transition: all .5s;
+}
+
+.navbar .navbar-nav .nav-item .g-underline:hover::after{
+    width: 100%;
+}
+
+/* nav bar */
+
+/* alertify-notifier css */
+
+.alertify-notifier .ajs-message {
+    background: rgba(255, 255, 255, 0.95);
+    color: #000;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 8px;
+    width: 370px;
+    font-size: 15px;
+    font-weight: 550;
+    font-family: 'Poppins', sans-serif;
+}
+
+.alertify-notifier .ajs-message.ajs-warning {
+    background: rgba(236, 221, 82, 0.95);
+    border-color: rgb(185, 160, 16);
+}
+
+.alertify-notifier .ajs-message.ajs-success {
+    background: rgba(73, 206, 104, 0.95);
+    border-color: rgb(44, 151, 12);
+}
+
+.alertify-notifier .ajs-message.ajs-error {
+    background: rgba(209, 78, 78, 0.95);
+    border-color: rgb(207, 33, 48);
+}
+
+/* alertify-notifier css */

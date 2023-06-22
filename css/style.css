@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* nav bar */
+
+nav .logo {
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+@media screen and(min-width:992px) {
+    .navbar{
+        padding: 0;
+    }
+
+    .navbar .navbar-nav .nav-link{
+        padding: 1em 0;
+    }
+    
+    .navbar .navbar-nav .nav-item{
+        padding: 0 1em;
+    }
+}
+
+.navbar .navbar-nav .nav-item{
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-item::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    content: '';
+    background-color: rgb(25,135,84);
+    width: 0%;
+    height: 2px;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    transition: all .5s;
+}
+
+.navbar .navbar-nav .nav-item:hover::after{
+    width: 100%;
+}
+
+/* nav bar */
+
+/* index page banner */
+
+@media screen and (max-width:992px){
+    .banner-title{
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (min-width:992px){
+    .banner-title{
+        margin-bottom: 190px;
+    }
+}
+
+.banner-para{
+    line-height: 30px;
+}
+
+.my-card{
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.my-card:hover{
+    transform: scale(1.1);
+}
+
+/* index page banner */
+
+/* signin page */
+
+.banner-signin{
+    background-image: url('../images/bg_wall.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-signin .custome-card{
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+@media screen and (min-width:768px){
+    .custom-border-left{
+        border-right: 2px solid #7575758a;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .custom-border-left-lg{
+        border-right: 2px solid #a1a1a16b;
+    }
+}
+
+@media screen and (max-width:576px){
+    .custom-border-bottom{
+        border-bottom: 2px solid #7575758a;
+    }
+}
+
+@media screen and (max-width:992px){
+    .custom-border-bottom-md{
+        border-bottom: 2px solid #a1a1a16b;
+    }
+}
+
+/* signin page */
+
+/* alertify-notifier css */
+
+.alertify-notifier .ajs-message {
+    background: rgba(255, 255, 255, 0.95);
+    color: #000;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 8px;
+    width: 370px;
+    font-size: 15px;
+    font-weight: 550;
+    font-family: 'Poppins', sans-serif;
+}
+
+.alertify-notifier .ajs-message.ajs-warning {
+    background: rgba(236, 221, 82, 0.95);
+    border-color: rgb(185, 160, 16);
+}
+
+.alertify-notifier .ajs-message.ajs-success {
+    background: rgba(73, 206, 104, 0.95);
+    border-color: rgb(44, 151, 12);
+}
+
+.alertify-notifier .ajs-message.ajs-error {
+    background: rgba(209, 78, 78, 0.95);
+    border-color: rgb(207, 33, 48);
+}
+
+/* alertify-notifier css */
+
+/* about paragraph */
+
+.about{
+    text-align: justify;
+}
+
+/* about paragraph */
+
+/* feedback page */
+
+.banner-signin .custome-card-2{
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+.banner-signin .custome-card-3{
+    margin-bottom: 20%;
+}
+
+/* feedback page */
+
+/* menu page */
+
+.banner-signin .custome-card-4{
+    margin-top: 5%;
+}
+
+@media screen and (max-width:1024px){
+    .custom-height{
+       height: 300px;
+    }
+}
+
+.effect{
+    overflow: hidden;
+}
+
+.effect img{
+    transition: all 0.6s ease;
+}
+
+.effect:hover img{
+    transform: scale(1.5);
+}
+
+/* menu page */
+
+/* success page */
+.title-yes{
+    font-size: 10vw;
+    font-weight: 650;
+}
+
+@media screen and (max-width:992px) {
+    .title-div{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .title-div{
+        margin-top: 4%;
+    }
+}
+/* success page */
